@@ -1,19 +1,24 @@
-#header {
-  position:relative;
-  padding:20px;
-  max-width:300px;
-  font-size:50px;
-  color:white;
+html {
+  font-family: arial;
+}
+
+
+header {
+  position: relative;
+  padding: 20px;
+  max-width: 300px;
+  font-size: 50px;
+  color: white;
   text-shadow: -5px 0 black, 0 5px black, 5px 0 black, 0 -5px black;
 }
 
 img {
-  background-color:#fff;
-  border-radius:3px;
-  padding:4px;
-  box-shadow:1px 1px 6px;
-  margin:10px 25px 10px 10px;
-  max-width:100%;
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 4px;
+  box-shadow: 1px 1px 6px;
+  margin: 10px 25px 10px 10px;
+  max-width: 100%;
 }
 
 body {
@@ -21,107 +26,65 @@ body {
 }
 
 
-.menu {
+nav {
   display:grid;
   grid-template-columns: 120px 120px 120px 120px;
   grid-template-rows: 20%;
-  margin:1% 5%;
+  margin: 1% 5%;
   border: 3px solid;
   border-radius: 5px;
   background-color: white;
-  min-width:500px;
+  min-width: 500px;
 }
 
 .button {
-  background:black;
+  background: black;
   padding: 10px;
-  margin:2px;
+  margin: 2px;
   color: white;
-  text-align:center;
+  text-align: center;
 }
 
 
-.content {
-  display:grid;
-  grid-auto-columns: 25%;
-  grid-template-rows: 20% 20% 30% 30%;
+section {
+  display:flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 1% 5%;
-  padding: 2% 1%;
+  padding: 5% 10%;
+  border: 1px solid;
+  background-color: white;
+}
+
+footer {
+  display:flex;
+  justify-content: flex-end;
+  margin: 1% 5%;
+  padding: 5% 10%;
   border: 1px solid;
   background-color: white;
 }
 
 
-.a {
-  grid-column-start: 1;
-  grid-column-end: span 2;
-  grid-row-start:1;
-  grid-row-end: 1;
-}
-
-.b {
-  grid-column-start: 2;
-  grid-column-end: span 2;
-  grid-row-start:1;
-  grid-row-end: 1;
-}
-
-.c {
-  grid-column-start: 3;
-  grid-column-end: span 1;
-  grid-row-start:1;
-  grid-row-end: 1;
-}
-
-.d {
-  grid-column-start: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  text-align: center;
-}
-
-.e {
-  grid-column-start: 1;
-  grid-column-end: span 1;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-.f {
-  grid-column-start: 2;
-  grid-column-end: span 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-.g {
-  grid-column-start: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-.h {
-  grid-column-start: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
 table {
-  width:600px;
-  border:2px solid;
+  width: 600px;
+  border: 2px solid;
   border-radius: 10px;
-  margin:0px 10px;
+  margin: 0px 10%;
+  padding: 1%;
+  
 }
 
 tr:nth-child(even) {
-  background: #CCC
+  background: #ccc
 }
 
 tr:nth-child(odd) {
-  background: #FFF
+  background: #fff
 }
 
-/*align the download button*/
+/*align the download icon*/
 td:nth-child(even) {
-  text-align:center;
+  text-align: center;
 }
